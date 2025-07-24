@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Navonous - AI Chatbots to grow your business. Automate customer interaction with WhatsApp, Website, and more.">
+    <meta name="keywords" content="AI Chatbot, WhatsApp Bot, Business Automation, Navonous, Chatbot for local business">
+    <meta name="author" content="Navonous">
+    <title>Navonous - AI Chatbots for Your Business</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+        html{scroll-behavior:smooth;}
+        body{background:#fff;color:#333;line-height:1.6;}
+        header{position:fixed;top:0;left:0;width:100%;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.1);display:flex;justify-content:space-between;align-items:center;padding:15px 50px;z-index:999;animation:fadeIn 1s ease-in-out;}
+        @keyframes fadeIn{from{opacity:0;top:-50px;}to{opacity:1;top:0;}}
+        header h1{color:#007bff;font-size:24px;font-weight:700;}
+        nav ul{display:flex;list-style:none;}
+        nav ul li{margin-left:25px;}
+        nav ul li a{text-decoration:none;color:#333;font-weight:500;transition:0.3s;}
+        nav ul li a:hover{color:#007bff;}
+        .hero{height:100vh;background:linear-gradient(135deg,#007bff,#00c6ff);display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;text-align:center;padding:0 20px;animation:fadeUp 1.5s ease;}
+        @keyframes fadeUp{from{opacity:0;transform:translateY(40px);}to{opacity:1;transform:translateY(0);}}
+        .hero h1{font-size:48px;margin-bottom:15px;}
+        .hero p{font-size:20px;margin-bottom:30px;}
+        .hero a{background:#fff;color:#007bff;padding:15px 30px;border-radius:8px;text-decoration:none;font-weight:600;transition:0.3s;}
+        .hero a:hover{background:#007bff;color:#fff;}
+        section{padding:80px 50px;max-width:1200px;margin:auto;}
+        h2{text-align:center;font-size:32px;margin-bottom:30px;}
+        .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;text-align:center;}
+        .features div{background:#f9f9f9;padding:25px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.05);transition:transform 0.3s;}
+        .features div:hover{transform:translateY(-10px);}
+        .plans{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+        .plan{flex:1 1 300px;background:#fff;padding:25px;border-radius:10px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1);transition:transform 0.3s;}
+        .plan:hover{transform:scale(1.05);}
+        .plan h3{margin-bottom:10px;font-size:24px;}
+        .plan p{margin-bottom:15px;}
+        .plan a{display:inline-block;background:#007bff;color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none;transition:0.3s;}
+        .plan a:hover{background:#0056b3;}
+        .contact form{display:grid;gap:15px;max-width:500px;margin:auto;}
+        input,textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:6px;}
+        button{background:#007bff;color:#fff;padding:12px;border:none;border-radius:6px;cursor:pointer;font-size:16px;transition:0.3s;}
+        button:hover{background:#0056b3;}
+        .privacy{max-width:900px;margin:auto;line-height:1.8;font-size:16px;}
+        footer{text-align:center;padding:20px;background:#f1f1f1;margin-top:50px;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Navonous</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#why">Why Navonous</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>AI Chatbots to Grow Your Business</h1>
+        <p>Automate WhatsApp, Website & More | Boost Sales & Save Time</p>
+        <a href="#plans">Get Started</a>
+    </section>
+
+    <section id="why">
+        <h2>Why Choose Navonous?</h2>
+        <div class="features">
+            <div>
+                <h3>24/7 Customer Support</h3>
+                <p>Always available for your customers, day or night.</p>
+            </div>
+            <div>
+                <h3>WhatsApp + Website</h3>
+                <p>Integrate on your most-used platforms effortlessly.</p>
+            </div>
+            <div>
+                <h3>Boost Sales</h3>
+                <p>Increase engagement and convert leads into customers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans">
+        <h2>Plans & Pricing</h2>
+        <div class="plans">
+            <div class="plan">
+                <h3>Basic</h3>
+                <p>WhatsApp only</p>
+                <p><strong>₹999/month</strong></p>
+                <a href="#contact">Choose Plan</a>
+            </div>
+            <div class="plan">
+                <h3>Standard</h3>
+                <p>WhatsApp + Website</p>
+                <p><strong>₹1999/month</strong></p>
+                <a href="#contact">Choose Plan</a>
+            </div>
+            <div class="plan">
+                <h3>Premium</h3>
+                <p>Full access + Branding</p>
+                <p><strong>₹2999/month</strong></p>
+                <a href="#contact">Choose Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="how">
+        <h2>How It Works</h2>
+        <div class="features">
+            <div>
+                <h3>1. Sign Up</h3>
+                <p>Create your account and add your business details.</p>
+            </div>
+            <div>
+                <h3>2. We Build Your Bot</h3>
+                <p>Navonous team creates your AI chatbot.</p>
+            </div>
+            <div>
+                <h3>3. Integrate & Grow</h3>
+                <p>Connect to WhatsApp or Website and start growing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Business Type" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="privacy" id="privacy">
+        <h2>Privacy Policy</h2>
+        <p>Your privacy is important to us. Navonous collects only necessary data to provide chatbot services. We do not share your personal information with third parties without consent. For detailed terms, contact our support team.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Navonous | Privacy Policy | Terms of Service</p>
+    </footer>
+</body>
+</html>
