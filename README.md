@@ -1,1 +1,1 @@
-# navonous-site
+# Rise - site
