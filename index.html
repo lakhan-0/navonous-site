@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Rise - AI Chatbots to grow your business. Automate customer interaction with WhatsApp, Website, and more." />
-  <meta name="keywords" content="AI Chatbot, WhatsApp Bot, Business Automation, Rise, Chatbot for local business" />
-  <meta name="author" content="Rise" />
-  <title>Rise - AI Chatbots for Your Business</title>
+  <meta name="description" content="Navonous - Smart AI Chatbots for WhatsApp, Website & Business Automation. Trusted by local businesses across India." />
+  <meta name="keywords" content="Navonous, AI Chatbot, WhatsApp Bot, Business Automation, Chatbot India" />
+  <meta name="author" content="Navonous" />
+  <title>Navonous - Smart AI Chatbots for Your Business</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
     html { scroll-behavior: smooth; }
-    body { background: #fff; color: #333; line-height: 1.6; }
+    body { background: #f8f9fa; color: #333; line-height: 1.6; }
     header {
       position: fixed;
       top: 0;
@@ -25,7 +26,7 @@
       padding: 15px 50px;
       z-index: 999;
     }
-    header h1 { color: #007bff; font-size: 24px; font-weight: 700; }
+    header h1 { color: #007bff; font-size: 26px; font-weight: 700; }
     nav ul { display: flex; list-style: none; }
     nav ul li { margin-left: 25px; }
     nav ul li a {
@@ -46,8 +47,8 @@
       text-align: center;
       padding: 0 20px;
     }
-    .hero h1 { font-size: 48px; margin-bottom: 15px; }
-    .hero p { font-size: 20px; margin-bottom: 30px; }
+    .hero h1 { font-size: 52px; margin-bottom: 15px; animation: fadeInDown 1s ease; }
+    .hero p { font-size: 20px; margin-bottom: 30px; animation: fadeInUp 1.2s ease; }
     .hero a {
       background: #fff;
       color: #007bff;
@@ -58,33 +59,19 @@
       transition: 0.3s;
     }
     .hero a:hover { background: #007bff; color: #fff; }
-    section { padding: 80px 50px; max-width: 1200px; margin: auto; }
-    h2 { text-align: center; font-size: 32px; margin-bottom: 30px; }
-    .features {
+    section { padding: 90px 50px; max-width: 1200px; margin: auto; }
+    h2 { text-align: center; font-size: 36px; margin-bottom: 30px; color: #007bff; }
+    .features, .plans, .faq {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
       text-align: center;
     }
-    .features div {
-      background: #f9f9f9;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    }
-    .plans {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .plan {
-      flex: 1 1 300px;
+    .features div, .plan, .faq div {
       background: #fff;
       padding: 25px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     }
     .plan h3 { margin-bottom: 10px; font-size: 24px; }
     .plan p { margin-bottom: 15px; }
@@ -104,8 +91,7 @@
       max-width: 500px;
       margin: auto;
     }
-    input,
-    textarea {
+    input, textarea {
       width: 100%;
       padding: 12px;
       border: 1px solid #ccc;
@@ -132,11 +118,11 @@
 </head>
 <body>
   <header>
-    <h1>Rise</h1>
+    <h1>Navonous</h1>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#why">Why Rise</a></li>
+        <li><a href="#why">Why Navonous</a></li>
         <li><a href="#plans">Plans</a></li>
         <li><a href="#how">How It Works</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -145,48 +131,33 @@
   </header>
 
   <section class="hero" id="home">
-    <h1>AI Chatbots to Grow Your Business</h1>
+    <h1>Smart AI Chatbots to Grow Your Business</h1>
     <p>Automate WhatsApp, Website & More | Boost Sales & Save Time</p>
     <a href="#plans">Get Started</a>
   </section>
 
   <section id="why">
-    <h2>Why Choose Rise?</h2>
+    <h2>Why Choose Navonous?</h2>
     <div class="features">
-      <div>
-        <h3>24/7 Customer Support</h3>
-        <p>Always available for your customers, day or night.</p>
-      </div>
-      <div>
-        <h3>WhatsApp + Website</h3>
-        <p>Integrate on your most-used platforms effortlessly.</p>
-      </div>
-      <div>
-        <h3>Boost Sales</h3>
-        <p>Increase engagement and convert leads into customers.</p>
-      </div>
+      <div data-aos="fade-up"><h3>24/7 Support</h3><p>Always available for your customers, day or night.</p></div>
+      <div data-aos="fade-up"><h3>WhatsApp + Website</h3><p>Integrate your chatbot on your top platforms.</p></div>
+      <div data-aos="fade-up"><h3>Boost Sales</h3><p>Turn chats into paying customers with automation.</p></div>
     </div>
   </section>
 
   <section id="plans">
     <h2>Plans & Pricing</h2>
     <div class="plans">
-      <div class="plan">
-        <h3>Basic</h3>
-        <p>WhatsApp only</p>
-        <p><strong>₹999/month</strong></p>
+      <div class="plan" data-aos="fade-up">
+        <h3>Basic</h3><p>WhatsApp only</p><p><strong>₹999/month</strong></p>
         <a href="#contact">Choose Plan</a>
       </div>
-      <div class="plan">
-        <h3>Standard</h3>
-        <p>WhatsApp + Website</p>
-        <p><strong>₹1999/month</strong></p>
+      <div class="plan" data-aos="fade-up">
+        <h3>Standard</h3><p>WhatsApp + Website</p><p><strong>₹1999/month</strong></p>
         <a href="#contact">Choose Plan</a>
       </div>
-      <div class="plan">
-        <h3>Premium</h3>
-        <p>Full access + Branding</p>
-        <p><strong>₹2999/month</strong></p>
+      <div class="plan" data-aos="fade-up">
+        <h3>Premium</h3><p>All features + Branding</p><p><strong>₹2999/month</strong></p>
         <a href="#contact">Choose Plan</a>
       </div>
     </div>
@@ -195,23 +166,14 @@
   <section id="how">
     <h2>How It Works</h2>
     <div class="features">
-      <div>
-        <h3>1. Sign Up</h3>
-        <p>Create your account and add your business details.</p>
-      </div>
-      <div>
-        <h3>2. We Build Your Bot</h3>
-        <p>Rise team creates your AI chatbot.</p>
-      </div>
-      <div>
-        <h3>3. Integrate & Grow</h3>
-        <p>Connect to WhatsApp or Website and start growing.</p>
-      </div>
+      <div data-aos="fade-up"><h3>1. Sign Up</h3><p>Tell us about your business and needs.</p></div>
+      <div data-aos="fade-up"><h3>2. Bot Setup</h3><p>Navonous team builds your customized chatbot.</p></div>
+      <div data-aos="fade-up"><h3>3. Go Live</h3><p>We deploy it to your WhatsApp/Website.</p></div>
     </div>
   </section>
 
   <section class="contact" id="contact">
-    <h2>Contact Us</h2>
+    <h2>Contact Navonous</h2>
     <form onsubmit="sendToWhatsApp(); return false;">
       <input type="text" id="name" placeholder="Name" required />
       <input type="email" id="email" placeholder="Email" required />
@@ -221,26 +183,30 @@
     </form>
   </section>
 
+  <footer>
+    <p>&copy; 2025 Navonous | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    AOS.init();
     function sendToWhatsApp() {
       let name = document.getElementById("name").value;
       let email = document.getElementById("email").value;
       let business = document.getElementById("business").value;
       let message = document.getElementById("message").value;
 
-      let text = `New Inquiry from Rise Site%0A%0A👤 Name: ${name}%0A📧 Email: ${email}%0A🏢 Business: ${business}%0A📝 Message: ${message}`;
-      let phone = "91 7877103332"; // ← Replace with your number
+      let text = `New Inquiry from Navonous Site%0A%0A👤 Name: ${name}%0A📧 Email: ${email}%0A🏢 Business: ${business}%0A📝 Message: ${message}`;
+      let phone = "91 7877103332";
       let url = `https://wa.me/${phone}?text=${text}`;
 
       window.open(url, "_blank");
     }
   </script>
-
-  <footer>
-    <p>&copy; 2025 Rise | Privacy Policy | Terms of Service</p>
-  </footer>
 </body>
 </html>
+
+
 
 
 
